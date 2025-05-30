@@ -1,0 +1,7 @@
+Nodes: 16
+Edges: 42
+Average Degree: 5.25
+Max Degree: 8
+Connected: True
+Diameter: 3
+Average Shortest Path: 1.90
