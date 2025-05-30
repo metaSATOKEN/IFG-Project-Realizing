@@ -1,0 +1,1004 @@
+{
+  "data": [
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.1,
+      "delta_MHz": -200.0,
+      "g_LS": -0.000644716470919615,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.1,
+      "delta_MHz": -200.0,
+      "g_LS": -0.005177843695131753,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.1,
+      "delta_MHz": -200.0,
+      "g_LS": -0.01036913016704324,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.1,
+      "delta_MHz": -200.0,
+      "g_LS": -0.005177843695131753,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.1,
+      "delta_MHz": -200.0,
+      "g_LS": -0.000644716470919615,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.575,
+      "delta_MHz": -200.0,
+      "g_LS": -0.003357365886012344,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.575,
+      "delta_MHz": -200.0,
+      "g_LS": -0.02696366010370925,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.575,
+      "delta_MHz": -200.0,
+      "g_LS": -0.053997323568910384,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.575,
+      "delta_MHz": -200.0,
+      "g_LS": -0.02696366010370925,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.575,
+      "delta_MHz": -200.0,
+      "g_LS": -0.003357365886012344,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.05,
+      "delta_MHz": -200.0,
+      "g_LS": -0.005057224615752831,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.05,
+      "delta_MHz": -200.0,
+      "g_LS": -0.04061555702802229,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.05,
+      "delta_MHz": -200.0,
+      "g_LS": -0.08133656062783383,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.05,
+      "delta_MHz": -200.0,
+      "g_LS": -0.04061555702802229,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.05,
+      "delta_MHz": -200.0,
+      "g_LS": -0.005057224615752831,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.525,
+      "delta_MHz": -200.0,
+      "g_LS": -0.005883649744034189,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.525,
+      "delta_MHz": -200.0,
+      "g_LS": -0.04725273838289978,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.525,
+      "delta_MHz": -200.0,
+      "g_LS": -0.09462815486342341,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.525,
+      "delta_MHz": -200.0,
+      "g_LS": -0.04725273838289978,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.525,
+      "delta_MHz": -200.0,
+      "g_LS": -0.005883649744034189,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 2.0,
+      "delta_MHz": -200.0,
+      "g_LS": -0.006235948276419259,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 2.0,
+      "delta_MHz": -200.0,
+      "g_LS": -0.05008211659331259,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 2.0,
+      "delta_MHz": -200.0,
+      "g_LS": -0.10029425694818705,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 2.0,
+      "delta_MHz": -200.0,
+      "g_LS": -0.05008211659331259,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 2.0,
+      "delta_MHz": -200.0,
+      "g_LS": -0.006235948276419259,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.1,
+      "delta_MHz": -100.0,
+      "g_LS": 0.0008370646254560107,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.1,
+      "delta_MHz": -100.0,
+      "g_LS": 0.006722629231347226,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.1,
+      "delta_MHz": -100.0,
+      "g_LS": 0.013462711829279246,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.1,
+      "delta_MHz": -100.0,
+      "g_LS": 0.006722629231347226,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.1,
+      "delta_MHz": -100.0,
+      "g_LS": 0.0008370646254560107,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.575,
+      "delta_MHz": -100.0,
+      "g_LS": 0.004359020351822391,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.575,
+      "delta_MHz": -100.0,
+      "g_LS": 0.03500814243731132,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.575,
+      "delta_MHz": -100.0,
+      "g_LS": 0.07010717341278001,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.575,
+      "delta_MHz": -100.0,
+      "g_LS": 0.03500814243731132,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.575,
+      "delta_MHz": -100.0,
+      "g_LS": 0.004359020351822391,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.05,
+      "delta_MHz": -100.0,
+      "g_LS": 0.006566024011754883,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.05,
+      "delta_MHz": -100.0,
+      "g_LS": 0.052733019187263266,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.05,
+      "delta_MHz": -100.0,
+      "g_LS": 0.10560294443959804,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.05,
+      "delta_MHz": -100.0,
+      "g_LS": 0.052733019187263266,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.05,
+      "delta_MHz": -100.0,
+      "g_LS": 0.006566024011754883,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.525,
+      "delta_MHz": -100.0,
+      "g_LS": 0.007639009225682391,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.525,
+      "delta_MHz": -100.0,
+      "g_LS": 0.06135037266821203,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.525,
+      "delta_MHz": -100.0,
+      "g_LS": 0.1228600238727591,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.525,
+      "delta_MHz": -100.0,
+      "g_LS": 0.06135037266821203,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.525,
+      "delta_MHz": -100.0,
+      "g_LS": 0.007639009225682391,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 2.0,
+      "delta_MHz": -100.0,
+      "g_LS": 0.008096414383392994,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 2.0,
+      "delta_MHz": -100.0,
+      "g_LS": 0.06502388268199279,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 2.0,
+      "delta_MHz": -100.0,
+      "g_LS": 0.13021658110886167,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 2.0,
+      "delta_MHz": -100.0,
+      "g_LS": 0.06502388268199279,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 2.0,
+      "delta_MHz": -100.0,
+      "g_LS": 0.008096414383392994,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.1,
+      "delta_MHz": 0.0,
+      "g_LS": 0.0015492523655086814,
+      "plv": 0.09966799462495582,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.1,
+      "delta_MHz": 0.0,
+      "g_LS": 0.012442347845518684,
+      "plv": 0.09966799462495582,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.1,
+      "delta_MHz": 0.0,
+      "g_LS": 0.024916998656238955,
+      "plv": 0.09966799462495582,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.1,
+      "delta_MHz": 0.0,
+      "g_LS": 0.012442347845518684,
+      "plv": 0.09966799462495582,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.1,
+      "delta_MHz": 0.0,
+      "g_LS": 0.0015492523655086814,
+      "plv": 0.09966799462495582,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.575,
+      "delta_MHz": 0.0,
+      "g_LS": 0.008067743380843918,
+      "plv": 0.5190218338982221,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.575,
+      "delta_MHz": 0.0,
+      "g_LS": 0.06479362026978841,
+      "plv": 0.5190218338982221,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.575,
+      "delta_MHz": 0.0,
+      "g_LS": 0.12975545847455552,
+      "plv": 0.5190218338982221,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.575,
+      "delta_MHz": 0.0,
+      "g_LS": 0.06479362026978841,
+      "plv": 0.5190218338982221,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.575,
+      "delta_MHz": 0.0,
+      "g_LS": 0.008067743380843918,
+      "plv": 0.5190218338982221,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.05,
+      "delta_MHz": 0.0,
+      "g_LS": 0.012152500443626302,
+      "plv": 0.7818063576087741,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.05,
+      "delta_MHz": 0.0,
+      "g_LS": 0.09759910075255668,
+      "plv": 0.7818063576087741,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.05,
+      "delta_MHz": 0.0,
+      "g_LS": 0.19545158940219354,
+      "plv": 0.7818063576087741,
+      "valid": true
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.05,
+      "delta_MHz": 0.0,
+      "g_LS": 0.09759910075255668,
+      "plv": 0.7818063576087741,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.05,
+      "delta_MHz": 0.0,
+      "g_LS": 0.012152500443626302,
+      "plv": 0.7818063576087741,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.525,
+      "delta_MHz": 0.0,
+      "g_LS": 0.014138398342402565,
+      "plv": 0.909565053033425,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.525,
+      "delta_MHz": 0.0,
+      "g_LS": 0.11354823401990907,
+      "plv": 0.909565053033425,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.525,
+      "delta_MHz": 0.0,
+      "g_LS": 0.22739126325835626,
+      "plv": 0.909565053033425,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.525,
+      "delta_MHz": 0.0,
+      "g_LS": 0.11354823401990907,
+      "plv": 0.909565053033425,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.525,
+      "delta_MHz": 0.0,
+      "g_LS": 0.014138398342402565,
+      "plv": 0.909565053033425,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 2.0,
+      "delta_MHz": 0.0,
+      "g_LS": 0.014984970997641673,
+      "plv": 0.9640275800758169,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 2.0,
+      "delta_MHz": 0.0,
+      "g_LS": 0.12034722409247278,
+      "plv": 0.9640275800758169,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 2.0,
+      "delta_MHz": 0.0,
+      "g_LS": 0.24100689501895423,
+      "plv": 0.9640275800758169,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 2.0,
+      "delta_MHz": 0.0,
+      "g_LS": 0.12034722409247278,
+      "plv": 0.9640275800758169,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 2.0,
+      "delta_MHz": 0.0,
+      "g_LS": 0.014984970997641673,
+      "plv": 0.9640275800758169,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.1,
+      "delta_MHz": 100.0,
+      "g_LS": 0.0008370646254560107,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.1,
+      "delta_MHz": 100.0,
+      "g_LS": 0.006722629231347226,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.1,
+      "delta_MHz": 100.0,
+      "g_LS": 0.013462711829279246,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.1,
+      "delta_MHz": 100.0,
+      "g_LS": 0.006722629231347226,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.1,
+      "delta_MHz": 100.0,
+      "g_LS": 0.0008370646254560107,
+      "plv": 0.05117125466010068,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.575,
+      "delta_MHz": 100.0,
+      "g_LS": 0.004359020351822391,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.575,
+      "delta_MHz": 100.0,
+      "g_LS": 0.03500814243731132,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.575,
+      "delta_MHz": 100.0,
+      "g_LS": 0.07010717341278001,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.575,
+      "delta_MHz": 100.0,
+      "g_LS": 0.03500814243731132,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.575,
+      "delta_MHz": 100.0,
+      "g_LS": 0.004359020351822391,
+      "plv": 0.2664746946750377,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.05,
+      "delta_MHz": 100.0,
+      "g_LS": 0.006566024011754883,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.05,
+      "delta_MHz": 100.0,
+      "g_LS": 0.052733019187263266,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.05,
+      "delta_MHz": 100.0,
+      "g_LS": 0.10560294443959804,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.05,
+      "delta_MHz": 100.0,
+      "g_LS": 0.052733019187263266,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.05,
+      "delta_MHz": 100.0,
+      "g_LS": 0.006566024011754883,
+      "plv": 0.4013927677648612,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.525,
+      "delta_MHz": 100.0,
+      "g_LS": 0.007639009225682391,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.525,
+      "delta_MHz": 100.0,
+      "g_LS": 0.06135037266821203,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.525,
+      "delta_MHz": 100.0,
+      "g_LS": 0.1228600238727591,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.525,
+      "delta_MHz": 100.0,
+      "g_LS": 0.06135037266821203,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.525,
+      "delta_MHz": 100.0,
+      "g_LS": 0.007639009225682391,
+      "plv": 0.4669862691011479,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 2.0,
+      "delta_MHz": 100.0,
+      "g_LS": 0.008096414383392994,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 2.0,
+      "delta_MHz": 100.0,
+      "g_LS": 0.06502388268199279,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 2.0,
+      "delta_MHz": 100.0,
+      "g_LS": 0.13021658110886167,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 2.0,
+      "delta_MHz": 100.0,
+      "g_LS": 0.06502388268199279,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 2.0,
+      "delta_MHz": 100.0,
+      "g_LS": 0.008096414383392994,
+      "plv": 0.4949482628304873,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.1,
+      "delta_MHz": 200.0,
+      "g_LS": -0.000644716470919615,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.1,
+      "delta_MHz": 200.0,
+      "g_LS": -0.005177843695131753,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.1,
+      "delta_MHz": 200.0,
+      "g_LS": -0.01036913016704324,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.1,
+      "delta_MHz": 200.0,
+      "g_LS": -0.005177843695131753,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.1,
+      "delta_MHz": 200.0,
+      "g_LS": -0.000644716470919615,
+      "plv": 0.026272198144871993,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 0.575,
+      "delta_MHz": 200.0,
+      "g_LS": -0.003357365886012344,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 0.575,
+      "delta_MHz": 200.0,
+      "g_LS": -0.02696366010370925,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 0.575,
+      "delta_MHz": 200.0,
+      "g_LS": -0.053997323568910384,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 0.575,
+      "delta_MHz": 200.0,
+      "g_LS": -0.02696366010370925,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 0.575,
+      "delta_MHz": 200.0,
+      "g_LS": -0.003357365886012344,
+      "plv": 0.13681267003514744,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.05,
+      "delta_MHz": 200.0,
+      "g_LS": -0.005057224615752831,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.05,
+      "delta_MHz": 200.0,
+      "g_LS": -0.04061555702802229,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.05,
+      "delta_MHz": 200.0,
+      "g_LS": -0.08133656062783383,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.05,
+      "delta_MHz": 200.0,
+      "g_LS": -0.04061555702802229,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.05,
+      "delta_MHz": 200.0,
+      "g_LS": -0.005057224615752831,
+      "plv": 0.20608191842635332,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 1.525,
+      "delta_MHz": 200.0,
+      "g_LS": -0.005883649744034189,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 1.525,
+      "delta_MHz": 200.0,
+      "g_LS": -0.04725273838289978,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 1.525,
+      "delta_MHz": 200.0,
+      "g_LS": -0.09462815486342341,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 1.525,
+      "delta_MHz": 200.0,
+      "g_LS": -0.04725273838289978,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 1.525,
+      "delta_MHz": 200.0,
+      "g_LS": -0.005883649744034189,
+      "plv": 0.2397587449096901,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 4.5,
+      "pump_power": 2.0,
+      "delta_MHz": 200.0,
+      "g_LS": -0.006235948276419259,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.0,
+      "pump_power": 2.0,
+      "delta_MHz": 200.0,
+      "g_LS": -0.05008211659331259,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 5.5,
+      "pump_power": 2.0,
+      "delta_MHz": 200.0,
+      "g_LS": -0.10029425694818705,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.0,
+      "pump_power": 2.0,
+      "delta_MHz": 200.0,
+      "g_LS": -0.05008211659331259,
+      "plv": 0.254114911172615,
+      "valid": false
+    },
+    {
+      "pump_freq_GHz": 6.5,
+      "pump_power": 2.0,
+      "delta_MHz": 200.0,
+      "g_LS": -0.006235948276419259,
+      "plv": 0.254114911172615,
+      "valid": false
+    }
+  ]
+}

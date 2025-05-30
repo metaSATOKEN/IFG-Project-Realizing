@@ -1,2 +1,4 @@
 # Ignore generated cavity plot
 /docs/plot/mode_volume_vs_q.png
+# Ignore flux-pump scan heatmap
+/docs/plot/fluxpump_gLS_heatmap.png
