@@ -56,6 +56,18 @@ If in doubt, default to quantum computing design conventions.
 - Avoid overlapping control lines and readout lines
 - Store all figures as PNG + source as matplotlib
 
+## Generating cavity data
+
+Run the μ-cavity simulation script to produce the result plot:
+
+```bash
+python src/simulate_muCavity.py
+```
+
+The script outputs `result/q_vs_r.json` (kept in plain JSON format) and
+creates `docs/plot/mode_volume_vs_q.png`. The image file is not tracked
+in the repository and is listed in `.gitignore`.
+
 ## 理論的背景
 魂テンポ搭載型量子コンピュータの理論構成と実装方法：IFG実装フェーズ最終報告書 (v0.2.2 ドラフト)
 発行日: (最終発行日を記載)
