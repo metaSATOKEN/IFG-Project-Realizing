@@ -1,0 +1,842 @@
+[
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₁",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₂",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₃",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₄",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₅",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₆",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₇",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₈",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₉",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₁₀",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₁₁",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₁₂",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₁₃",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₁₄",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₀",
+    "q2": "ψ₁₅",
+    "distance": 4.243,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₂",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₃",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₄",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₅",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₆",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₇",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₈",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₉",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₁₀",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₁₁",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₁₂",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₁₃",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₁₄",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁",
+    "q2": "ψ₁₅",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₃",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₄",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₅",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₆",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₇",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₈",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₉",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₁₀",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₁₁",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₁₂",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₁₃",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₁₄",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₂",
+    "q2": "ψ₁₅",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₄",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₅",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₆",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₇",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₈",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₉",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₁₀",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₁₁",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₁₂",
+    "distance": 4.243,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₁₃",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₁₄",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₃",
+    "q2": "ψ₁₅",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₅",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₆",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₇",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₈",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₉",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₁₀",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₁₁",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₁₂",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₁₃",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₁₄",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₄",
+    "q2": "ψ₁₅",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₆",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₇",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₈",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₉",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₁₀",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₁₁",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₁₂",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₁₃",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₁₄",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₅",
+    "q2": "ψ₁₅",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₇",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₈",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₉",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₁₀",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₁₁",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₁₂",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₁₃",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₁₄",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₆",
+    "q2": "ψ₁₅",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₈",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₉",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₁₀",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₁₁",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₁₂",
+    "distance": 3.606,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₁₃",
+    "distance": 2.828,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₁₄",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₇",
+    "q2": "ψ₁₅",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₈",
+    "q2": "ψ₉",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₈",
+    "q2": "ψ₁₀",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₈",
+    "q2": "ψ₁₁",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₈",
+    "q2": "ψ₁₂",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₈",
+    "q2": "ψ₁₃",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₈",
+    "q2": "ψ₁₄",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₈",
+    "q2": "ψ₁₅",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₉",
+    "q2": "ψ₁₀",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₉",
+    "q2": "ψ₁₁",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₉",
+    "q2": "ψ₁₂",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₉",
+    "q2": "ψ₁₃",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₉",
+    "q2": "ψ₁₄",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₉",
+    "q2": "ψ₁₅",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁₀",
+    "q2": "ψ₁₁",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₁₀",
+    "q2": "ψ₁₂",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁₀",
+    "q2": "ψ₁₃",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₁₀",
+    "q2": "ψ₁₄",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₁₀",
+    "q2": "ψ₁₅",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₁₁",
+    "q2": "ψ₁₂",
+    "distance": 3.162,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁₁",
+    "q2": "ψ₁₃",
+    "distance": 2.236,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁₁",
+    "q2": "ψ₁₄",
+    "distance": 1.414,
+    "coupled": true,
+    "semantic_weight": 0.3717
+  },
+  {
+    "q1": "ψ₁₁",
+    "q2": "ψ₁₅",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₁₂",
+    "q2": "ψ₁₃",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₁₂",
+    "q2": "ψ₁₄",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁₂",
+    "q2": "ψ₁₅",
+    "distance": 3.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁₃",
+    "q2": "ψ₁₄",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  },
+  {
+    "q1": "ψ₁₃",
+    "q2": "ψ₁₅",
+    "distance": 2.0,
+    "coupled": false,
+    "semantic_weight": 0.0
+  },
+  {
+    "q1": "ψ₁₄",
+    "q2": "ψ₁₅",
+    "distance": 1.0,
+    "coupled": true,
+    "semantic_weight": 0.4966
+  }
+]
