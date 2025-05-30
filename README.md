@@ -177,8 +177,33 @@ BFS from each node, and saves the results to `result/path_matrix.json`.
 - 辞書型で ψᵢ → { ψⱼ: [経路] } の形を取る
 - エンコードはUTF-8、JSONはインデント付きで保存
 - ファイル名は固定：result/path_matrix.json
-
+#
 # 実行ファイル例
 python src/gen_allpair_paths.py
 ```
+
+## QASM Execution Trace Visualization
+
+To visualize how the generated QASM executes step-by-step, run:
+
+```bash
+python src/simulate_qasm.py --json
+python src/render_qasm_trace.py
+```
+
+These steps will:
+
+- Simulate the execution of `result/iirb_swap_resolved.qasm`
+- Log each SWAP/CX operation and full qubit state to `result/qasm_trace.json`
+- Render each step as an image (`docs/plot/qasm_trace_step_XXX.png`)
+- Combine the images into an animated GIF: `result/qasm_trace.gif`
+
+Each image includes:
+
+- Step number, gate type, and target qubits
+- Visualized 16-qubit states, where:
+  - 🟩 represents 1
+  - ⬛ represents 0
+
+⚠️ Requires the Pillow library (install with `pip install pillow`)
 
