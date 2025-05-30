@@ -149,3 +149,36 @@ Euclidean distance between all pairs of logical states. The results are saved
 to `result/coupling_candidates.json` and a short summary is printed after
 completion.
 
+## All-Pairs Path Matrix
+
+Run the path matrix generator to record the shortest routes between every
+logical state pair:
+
+```bash
+python src/gen_allpair_paths.py
+```
+
+The program loads the logical-to-physical mapping and coupling table, performs
+BFS from each node, and saves the results to `result/path_matrix.json`.
+
+```
+# Task: 全論理状態ペア間の最短経路を推定し、JSONに保存する
+# Codexくんにお願い：
+
+# 使用ファイル
+- 入力: result/logic_physical_map.json（ノード情報）
+- 入力: result/coupling_candidates.json（結合判定）
+- 出力: result/path_matrix.json（ψᵢ → ψⱼ の最短経路）
+
+# 要求仕様
+- logical_index(ψₙ) に基づく昇順でノードを処理
+- BFSで最短経路（中間ノード含む）をリスト形式で出力
+- 全ノード間の経路を記録し、JSONに保存する
+- 辞書型で ψᵢ → { ψⱼ: [経路] } の形を取る
+- エンコードはUTF-8、JSONはインデント付きで保存
+- ファイル名は固定：result/path_matrix.json
+
+# 実行ファイル例
+python src/gen_allpair_paths.py
+```
+
