@@ -136,3 +136,16 @@ python src/map_state_to_layout.py --states ψ₀ ψ₁ ψ₂ ψ₃ ψ₄ ψ₅ �
 The mapping routine checks that the number of provided state labels matches the
 number of qubits and orders qubits numerically (``Q0``, ``Q1`` ... ``Q15``).
 
+## Coupling Candidate Inference
+
+To determine which logical qubit pairs are likely to be physically coupled, run:
+
+```bash
+python src/infer_coupling_candidates.py
+```
+
+This program reads `result/logic_physical_map.json` and calculates the
+Euclidean distance between all pairs of logical states. The results are saved
+to `result/coupling_candidates.json` and a short summary is printed after
+completion.
+
