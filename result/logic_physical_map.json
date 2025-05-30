@@ -1,0 +1,98 @@
+[
+  {
+    "logical_state": "ψ₀",
+    "qubit_id": "Q0",
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "logical_state": "ψ₁",
+    "qubit_id": "Q1",
+    "x": 1.0,
+    "y": 0.0
+  },
+  {
+    "logical_state": "ψ₂",
+    "qubit_id": "Q2",
+    "x": 2.0,
+    "y": 0.0
+  },
+  {
+    "logical_state": "ψ₃",
+    "qubit_id": "Q3",
+    "x": 3.0,
+    "y": 0.0
+  },
+  {
+    "logical_state": "ψ₄",
+    "qubit_id": "Q4",
+    "x": 0.0,
+    "y": 1.0
+  },
+  {
+    "logical_state": "ψ₅",
+    "qubit_id": "Q5",
+    "x": 1.0,
+    "y": 1.0
+  },
+  {
+    "logical_state": "ψ₆",
+    "qubit_id": "Q6",
+    "x": 2.0,
+    "y": 1.0
+  },
+  {
+    "logical_state": "ψ₇",
+    "qubit_id": "Q7",
+    "x": 3.0,
+    "y": 1.0
+  },
+  {
+    "logical_state": "ψ₈",
+    "qubit_id": "Q8",
+    "x": 0.0,
+    "y": 2.0
+  },
+  {
+    "logical_state": "ψ₉",
+    "qubit_id": "Q9",
+    "x": 1.0,
+    "y": 2.0
+  },
+  {
+    "logical_state": "ψ₁₀",
+    "qubit_id": "Q10",
+    "x": 2.0,
+    "y": 2.0
+  },
+  {
+    "logical_state": "ψ₁₁",
+    "qubit_id": "Q11",
+    "x": 3.0,
+    "y": 2.0
+  },
+  {
+    "logical_state": "ψ₁₂",
+    "qubit_id": "Q12",
+    "x": 0.0,
+    "y": 3.0
+  },
+  {
+    "logical_state": "ψ₁₃",
+    "qubit_id": "Q13",
+    "x": 1.0,
+    "y": 3.0
+  },
+  {
+    "logical_state": "ψ₁₄",
+    "qubit_id": "Q14",
+    "x": 2.0,
+    "y": 3.0
+  },
+  {
+    "logical_state": "ψ₁₅",
+    "qubit_id": "Q15",
+    "x": 3.0,
+    "y": 3.0
+  }
+]
