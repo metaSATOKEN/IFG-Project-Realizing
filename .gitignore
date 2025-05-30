@@ -2,3 +2,5 @@
 /docs/plot/mode_volume_vs_q.png
 # Ignore flux-pump scan heatmap
 /docs/plot/fluxpump_gLS_heatmap.png
+/docs/plot/semantic_coupling_graph.png
+/docs/plot/semantic_spread_step5.png

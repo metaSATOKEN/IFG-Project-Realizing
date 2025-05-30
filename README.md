@@ -207,3 +207,21 @@ Each image includes:
 
 ⚠️ Requires the Pillow library (install with `pip install pillow`)
 
+
+## Semantic Coupling Visualization
+
+These utility scripts work with `result/semantic_coupling_map.json` to inspect how logical states relate semantically.
+
+```bash
+python src/gen_semantic_weights.py
+python src/plot_semantic_coupling_graph.py
+python src/gen_semantic_tensor.py
+python src/simulate_semantic_spread.py
+```
+
+Generated files:
+- `docs/plot/semantic_coupling_graph.png`
+- `result/semantic_tensor.csv`
+- `result/semantic_tensor.json`
+- `result/semantic_spread_steps.json`
+- `docs/plot/semantic_spread_step5.png`
