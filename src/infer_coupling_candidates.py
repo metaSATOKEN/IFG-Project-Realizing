@@ -67,7 +67,7 @@ def main() -> None:
     mapping = load_mapping(src)
     candidates = infer_couplings(mapping, threshold=1.5)
     write_json(candidates, dst)
-    print(f"Coupling candidates written to {dst}")
+    print(f"Printed {len(candidates)} coupling pair(s) to {dst}")
 
 
 if __name__ == "__main__":

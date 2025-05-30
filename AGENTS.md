@@ -42,3 +42,11 @@ IFGプロジェクトでは、以下のスクリプト群を互いに独立し�
 - **出力ファイル**：`result/logic_physical_map.json`
 - **エージェント的役割**：論理状態–物理配置マッピングエージェント
 - **依存ライブラリ**：`json`
+
+## infer_coupling_candidates.py
+
+- **機能概要**：論理状態の物理座標をもとに距離を計算し、近接ペアを"coupled"とした一覧JSONを生成する。
+- **入力ファイル/引数**：コマンドライン引数なし。`result/logic_physical_map.json` を読み込む。
+- **出力ファイル**：`result/coupling_candidates.json`
+- **エージェント的役割**：結合候補推定エージェント
+- **依存ライブラリ**：`json`、`math`、`os`
