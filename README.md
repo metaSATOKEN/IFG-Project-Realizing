@@ -133,3 +133,6 @@ Example:
 python src/map_state_to_layout.py --states ψ₀ ψ₁ ψ₂ ψ₃ ψ₄ ψ₅ ψ₆ ψ₇ ψ₈ ψ₉ ψ₁₀ ψ₁₁ ψ₁₂ ψ₁₃ ψ₁₄ ψ₁₅
 ```
 
+The mapping routine checks that the number of provided state labels matches the
+number of qubits and orders qubits numerically (``Q0``, ``Q1`` ... ``Q15``).
+
