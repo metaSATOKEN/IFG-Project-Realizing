@@ -69,3 +69,17 @@ creates `docs/plot/mode_volume_vs_q.png`. The image file is not tracked
 in the repository and is listed in `.gitignore`.
 
 
+
+
+## μ-Cavity Optimization Results
+This section summarizes the simulation results from `opt_design.json`.
+
+| Radius (cm) | Height (cm) | Q | Mode Volume (cm³) | Q / V |
+|-------------|-------------|--------------|-------------------|------------------|
+| 0.22000000000000003 | 0.05 | 5212890.3 | 0.007603 | 685667161.17 |
+
+Full results are stored in [`result/opt_design.json`](result/opt_design.json).
+
+```bash
+python src/simulate_muCavity.py
+```
