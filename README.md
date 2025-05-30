@@ -48,3 +48,10 @@ For each task, produce:
 All units should be SI or convertible.
 
 If in doubt, default to quantum computing design conventions.
+
+## Extra Instructions
+
+- Use `scipy.optimize` for parameter search
+- For layout generation, assume 2D chip area 10mm x 10mm
+- Avoid overlapping control lines and readout lines
+- Store all figures as PNG + source as matplotlib
