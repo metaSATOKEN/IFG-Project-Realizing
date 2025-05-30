@@ -106,3 +106,30 @@ python src/layout_16Q_auto.py
 Add ``--hex`` to use a hexagonal arrangement or ``--pitch`` to change the
 qubit spacing. The script writes the coordinates to
 `result/qubit_layout_map.txt` in plain text.
+
+## Qubit-State Mapper
+
+To automatically assign logical states (e.g., ψ₀, ψ₁, ...) to physical Qubit positions
+defined in `result/qubit_layout_map.txt`, run:
+
+```bash
+python src/map_state_to_layout.py
+```
+
+This script creates a file `result/qubit_state_map.txt` with lines like:
+
+```
+Q0: (0.0, 0.0) → ψ₀
+Q1: (1.0, 0.0) → ψ₁
+...
+```
+
+It uses the layout file and assigns states sequentially.
+If needed, you can pass `--states` to customize the number or naming of states.
+
+Example:
+
+```bash
+python src/map_state_to_layout.py --states ψ₀ ψ₁ ψ₂ ψ₃ ψ₄ ψ₅ ψ₆ ψ₇ ψ₈ ψ₉ ψ₁₀ ψ₁₁ ψ₁₂ ψ₁₃ ψ₁₄ ψ₁₅
+```
+
