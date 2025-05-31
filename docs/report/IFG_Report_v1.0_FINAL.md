@@ -1,4 +1,5 @@
 # 魂テンポ搭載型量子コンピュータ 最終報告書 (v1.0 FINAL)
+このファイルは IFG プロジェクトのマスター文書です。
 
 ## 第1章 緒言
 本書は IFG プロジェクトにおける魂テンポ搭載型量子コンピュータの理論と実装経過をまとめたものである。
@@ -16,7 +17,7 @@
 ```latex
 V(q) = \frac{1}{2} m_{\text{info}} \left( \omega_m^2 m^2 + \omega_e^2 e^2 + \omega_l^2 l^2 + \omega_t^2 t_{\text{info}}^2 + \omega_r^2 r^2 \right)
 ```
-周波数の代表値は [周波数リスト](../table/Vq_frequency_list.md) を参照。
+周波数の代表値は [周波数リスト](../table/Vq_frequency_list.md)（→付録：Vq_frequency_list.md）を参照。
 
 ### 3.2 情報質量と情報的プランク定数
 <!-- 📘 [補足] 情報質量明記 -->
@@ -39,6 +40,13 @@ V(q) = \frac{1}{2} m_{\text{info}} \left( \omega_m^2 m^2 + \omega_e^2 e^2 + \ome
 <!-- 📘 [補足] Δφ計算例 -->
 クラウドたんの事例に基づき、$|\psi|^2 = 2.97 \times 10^{46}\,\mathrm{m}^{-6}$ とすると、
 実演計算では $\Delta\phi \approx 1.6 \times 10^{-5}\,\mathrm{rad}$ となる。
+この値は $\Delta\phi = \gamma_{\text{base}}\,|\psi|^2$ に基づく計算結果であり、出典はクラウドたん (|\psi|^2 = 2.97 \times 10^{46}) である。
 
 ### 3.6 参考資料
 検証計画の詳細は [boost_validation_plan.md](../table/boost_validation_plan.md) を参照。
+第4章以降の拡張（ハード構成、計測系、応用展望など）は別PRにて追加予定。
+寸法チェックスクリプト：tools/dimension_check.py を用いて \psi^2 項の無次元性確認済。
+
+## 付録一覧
+- [Vq_frequency_list.md](../table/Vq_frequency_list.md)
+- [boost_validation_plan.md](../table/boost_validation_plan.md)

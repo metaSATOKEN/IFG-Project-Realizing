@@ -264,7 +264,9 @@ index 2d72b449e4d7bd5c6359ddef263d31f8b9c373a3..e4306510d84cc3c90b58dde542f21a67
 +## 新規追加ツール
 +
 +- `tools/dimension_check.py`：第3章 §3.1–§3.2 の寸法解析を行う Python スクリプト
++  実行例：`python tools/dimension_check.py` → "dimensionless: True" を確認
 +- `docs/table/dimension_analysis.md`：パラメータの次元・代表値をまとめた表（旧 .xlsx を Markdown 形式に移行）
++- `archives/dimension_analysis.xlsx`：旧Excel版は archives に移動済
 +- `docs/table/Vq_frequency_list.md`：ポテンシャル $V(q)$ の各軸周波数リスト
 +- `docs/table/boost_validation_plan.md`：ブースト検証計画をまとめた Markdown テーブル
 +- `archive/legacy_paths/path_table_from_ψ0.json`：旧形式の論理パステーブル

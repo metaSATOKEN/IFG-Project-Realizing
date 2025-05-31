@@ -27,14 +27,17 @@ def main() -> None:
     hbar_info: Dimension = {"bit": 1, "s": 1}
     omega: Dimension = {"s": -1}
     q: Dimension = {"bit": 1}
+    psi: Dimension = {}
 
     # Free energy term ~ hbar_info * omega
     free_dim = combine(hbar_info, omega)
     # Potential term ~ m_info * omega**2 * q**2
     potential_dim = combine(m_info, {"s": -2}, {"bit": 2})
+    psi_sq_dim = combine(psi, psi)
 
     print("Free term dimension:", free_dim, "dimensionless:", is_dimensionless(free_dim))
     print("Potential term dimension:", potential_dim, "dimensionless:", is_dimensionless(potential_dim))
+    print("psi^2 dimensionless:", is_dimensionless(psi_sq_dim))
 
 
 if __name__ == "__main__":
