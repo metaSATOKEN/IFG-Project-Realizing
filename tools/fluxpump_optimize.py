@@ -1,6 +1,7 @@
 """Flux pump control parameter optimization."""
 
 import argparse
+import os
 import numpy as np
 from scipy.optimize import minimize
 
@@ -52,6 +53,7 @@ def save_plot(omega_p_GHz: float, g_val: float, g_target: float, path: str = "do
     """Save gain versus frequency plot."""
     try:
         import matplotlib.pyplot as plt
+        os.makedirs(os.path.dirname(path), exist_ok=True)
 
         plt.figure()
         plt.axhline(g_target, color="gray", linestyle="--", label="g_target")
@@ -96,5 +98,6 @@ if __name__ == "__main__":
     print("g_LS:", g_val)
     print("Minimum J:", J_val)
 
-    if args.plot:
-        save_plot(w_opt_GHz, g_val, args.target, args.plot)
+    # if args.plot:
+    #     save_plot(w_opt_GHz, g_val, args.target, args.plot)
+    # ※ PNG生成は後から行う想定です。必要に応じてコメントを外して実行してください

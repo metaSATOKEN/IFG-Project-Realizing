@@ -14,6 +14,7 @@ Author: Codex（MetaShirou prompt経由）
 """
 
 import argparse
+import os
 from pprint import pprint
 
 import numpy as np
@@ -74,6 +75,7 @@ def save_plot(R_vals: np.ndarray, J_vals: np.ndarray, path: str = "docs/plot/cav
     """Save J versus R plot."""
     try:
         import matplotlib.pyplot as plt
+        os.makedirs(os.path.dirname(path), exist_ok=True)
 
         plt.figure()
         plt.plot(R_vals, J_vals, marker="o")
@@ -117,6 +119,7 @@ if __name__ == "__main__":
     if args.verbose:
         pprint(vars(res))
 
-    R_vals = np.linspace(args.min_R, args.max_R, 50)
-    J_vals = [objective([r, L_opt, t_opt]) for r in R_vals]
-    save_plot(R_vals, np.array(J_vals))
+    # R_vals = np.linspace(args.min_R, args.max_R, 50)
+    # J_vals = [objective([r, L_opt, t_opt]) for r in R_vals]
+    # save_plot(R_vals, np.array(J_vals))
+    # ※ 後から人手でプロット生成したい場合は、上記3行のコメントを外して実行してください

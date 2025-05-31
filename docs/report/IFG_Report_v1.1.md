@@ -37,8 +37,8 @@ Minimum J: 2.31
 シミュレーションから得られた \(J\) と半径の関係を以下に示す。本章の計算結果は `tools/` 以下のスクリプトによって自動生成されたものである。
 
 **図 4.1**: \(J\) と \(R\) の関係  
+<!-- TODO: この図は tools/cavity_optimize.py 実行後に生成・コミットしてください -->
 ![](../plot/cavity_J_vs_R.png)
-<!-- TODO: この図は未生成。cavity_optimize.py の save_plot() で生成 -->
 
 #### 4.2 SQUIDカップリング
 
@@ -66,6 +66,10 @@ Minimum J: 4.8e-3
 
 以上より，目標結合強度を満たすパラメータ組を決定できる。
 
+**図 4.2**: \(J\) と d の関係  
+<!-- TODO: この図は tools/squid_coupler.py 実行後に生成・コミットしてください -->
+![](../plot/squid_J_vs_d.png)
+
 ### 第5章 制御・デコヒーレンス抑制
 
 #### 5.1 フラックスポンプ最適化
@@ -92,8 +96,8 @@ Minimum J: 1.2e-4
 得られた \(g_{\mathrm{LS}}\) とポンプ周波数の関係例を以下に示す。生成されたグラフは `docs/plot/fluxpump_g_vs_freq.png` に保存される。
 
 **図 5.1**: \(g_{\mathrm{LS}}\) とポンプ周波数の関係  
+<!-- TODO: この図は tools/fluxpump_optimize.py 実行後に生成・コミットしてください -->
 ![](../plot/fluxpump_g_vs_freq.png)
-<!-- TODO: この図は未生成。fluxpump_optimize.py の save_plot() で生成 -->
 
 #### 5.2 Dynamical Decouplingシーケンス
 
@@ -116,5 +120,5 @@ $ python tools/dd_simulation.py
 パルス数 \(N\) に対する \(T_2\) の傾向を以下に示す。本節の結果も `tools/` スクリプトにより計算されたものである。
 
 **図 5.2**: \(T_2\) とパルス数の関係  
+<!-- TODO: この図は tools/dd_simulation.py 実行後に生成・コミットしてください -->
 ![](../plot/dd_T2_vs_N.png)
-<!-- TODO: この図は未生成。dd_simulation.py の save_plot() で生成 -->
