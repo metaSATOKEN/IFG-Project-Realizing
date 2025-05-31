@@ -302,3 +302,18 @@ python src/visualize_results.py result/metrics.json result/noise_fit.json result
 `sim_cooling_heatload.py` works without arguments using the same defaults as above, but the example shows them explicitly for clarity.
 
 `extract_quantum_metrics.py` accepts CSV files with either a `freq` column (GHz) or a `timestamp` column converted to frequency. Amplitude can come from `I`/`Q` or an `abs` column.
+
+## Chapter 7: Compare experiment vs theory
+
+Example usage:
+
+```bash
+# Chapter 7: Compare experiment vs theory
+python src/compare_resonance.py data/resonance_experiment.csv result/metrics.json --out docs/plot/fig7_1.png
+python src/compare_noise.py result/noise_fit.json result/theory_noise.json --out docs/plot/fig7_2.png
+python src/compare_dd_decay.py data/dd_experiment.csv result/t2.json --out docs/plot/fig7_3.png
+python src/generate_error_analysis_flow.py --out docs/plot/fig7_4.png
+
+# Parameter mapping
+python src/fit_theory_experiment_mapping.py result/theory_params_init.json result/metrics.json result/t2.json result/noise_fit.json result/temperature_drift.csv result/heatload.json result/theory_params_validated.json
+```

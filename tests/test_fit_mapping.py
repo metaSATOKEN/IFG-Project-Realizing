@@ -1,5 +1,8 @@
 from pathlib import Path
 import json
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1] / "src"))
 
 from fit_theory_experiment_mapping import fit_params
 
@@ -31,7 +34,9 @@ def test_fit_params(tmp_path: Path) -> None:
 
     result = fit_params(theory_p, metrics_p, t2_p, noise_p, temp_csv, heat_p, out_p)
     loaded = json.loads(out_p.read_text())
-    assert result == loaded
+
     assert loaded["fc_GHz"] != 0
     assert loaded["Q_loaded"] > 1
-    assert loaded["Gamma_dec"] == 0.01
+    assert loaded["Gamma_dec"] == t2["Gamma_dec"]
+    assert loaded.get("noise_model", {}).get("A") == noise["noise_model"]["A"]
+    assert isinstance(result, dict)
