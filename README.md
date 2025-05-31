@@ -270,3 +270,12 @@ index 2d72b449e4d7bd5c6359ddef263d31f8b9c373a3..e4306510d84cc3c90b58dde542f21a67
 +- `docs/table/Vq_frequency_list.md`：ポテンシャル $V(q)$ の各軸周波数リスト
 +- `docs/table/boost_validation_plan.md`：ブースト検証計画をまとめた Markdown テーブル
 +- `archive/legacy_paths/path_table_from_ψ0.json`：旧形式の論理パステーブル
+
+## 📊 Simulation Tools
+
+- `tools/cavity_optimize.py`：μ-cavity の Q×モード体積最適化ツール
+- `tools/squid_coupler.py`：SQUID相互インダクタンス最適化
+- `tools/fluxpump_optimize.py`：g_LS & BW を最大化するポンプ制御最適化
+- `tools/dd_simulation.py`：DDシーケンスのデコヒーレンス抑制効果シミュレーター
+
+docs/plot/ 以下に各スクリプト出力結果（matplotlib 画像など）を格納し、IFG_Report_v1.1.md（または第4・5章）に埋め込みます。
