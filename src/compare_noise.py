@@ -5,14 +5,11 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
-import sys
-
-sys.path.append(str(Path(__file__).resolve().parent))
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-from simulate_noise_spectrum import noise_theory
+from src.simulate_noise_spectrum import noise_theory
 
 
 def main(measured_json: str, theory_json: str, out_path: str = "docs/plot/fig7_2.png") -> None:

@@ -136,7 +136,11 @@ $ python tools/dd_simulation.py
 | $A,B$ | noise\_fit.json |
 | $\Gamma_{\text{dec}}$ | t2.json |
 
-温度ドリフトから求めた係数を $\alpha_{\mathrm{temp}}$ とおき，$\omega(t)=\omega_0(1-\alpha_{\mathrm{temp}} t)$ と補正する。熱負荷の総和も同時にパラメータ更新へ反映した。
+温度ドリフトから求めた係数を $\alpha_{\mathrm{temp}}$ とおき，
+$$
+\omega(t)=\omega_0\bigl(1-\alpha_{\mathrm{temp}} t\bigr)
+$$
+と補正する。熱負荷の総和も同時にパラメータ更新へ反映した。
 
 #### 7.2 実験誤差要因とモデルギャップ
 

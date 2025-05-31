@@ -1,11 +1,7 @@
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parents[1] / 'src'))
-
 import numpy as np
-from compute_noise_spectrum import noise_model
-from extract_quantum_metrics import lorentzian
-from visualize_results import compute_lorentz_curve
+from src.compute_noise_spectrum import noise_model
+from src.extract_quantum_metrics import lorentzian
+from src.visualize_results import compute_lorentz_curve
 
 
 def test_noise_model():
