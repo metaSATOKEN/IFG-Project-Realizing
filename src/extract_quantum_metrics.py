@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Extract resonance parameters from filtered RF data."""
+"""Extract resonance parameters from filtered RF data.
+
+Frequency column must be specified in GHz. Output JSON will include units.
+
+CLI Usage:
+    python extract_quantum_metrics.py INPUT.csv OUTPUT.json
+"""
 import csv
 import json
 import math
@@ -15,7 +21,12 @@ def load_csv(path: str) -> Tuple[np.ndarray, np.ndarray]:
         freqs = []
         amps = []
         for row in reader:
-            f = float(row.get("timestamp", row.get("freq", 0)))
+            if "freq" in row:
+                f = float(row["freq"])
+            elif "timestamp" in row:
+                f = float(row["timestamp"])
+            else:
+                continue
             if "I" in row and "Q" in row:
                 i = float(row["I"])
                 q = float(row["Q"])
@@ -38,14 +49,25 @@ def fit_lorentzian(freqs: np.ndarray, amps: np.ndarray) -> Tuple[float, float, f
     q_guess = 1e4
     depth_guess = max(amps) - min(amps)
     base_guess = max(amps)
-    popt, _ = curve_fit(lorentzian, freqs, amps, p0=[fc_guess, q_guess, depth_guess, base_guess])
+    popt, _ = curve_fit(
+        lorentzian,
+        freqs,
+        amps,
+        p0=[fc_guess, q_guess, depth_guess, base_guess],
+        bounds=(0, np.inf),
+        maxfev=10000,
+    )
     return tuple(popt)
 
 
 def estimate_qi_qe(ql: float, amp_min: float, base: float) -> Tuple[float, float]:
     s_min = amp_min / base if base != 0 else 1.0
-    qe = ql / max(1.0 - s_min, 1e-12)
-    qi = 1.0 / max(1.0 / ql - 1.0 / qe, 1e-12)
+    if s_min >= 1.0:
+        raise ValueError("s_min must be < 1 to compute Qe and Qi")
+    qe = ql / (1.0 - s_min)
+    qi = 1.0 / (1.0 / ql - 1.0 / qe)
+    if qi <= 0 or qe <= 0:
+        raise ValueError("Computed Qi or Qe is non-positive")
     return qi, qe
 
 
@@ -61,14 +83,17 @@ def main(path: str, out_json: str) -> None:
         "Q_loaded": ql,
         "Q_internal": qi,
         "Q_external": qe,
+        "unit_fc": "GHz",
     }
     with open(out_json, "w") as fh:
         json.dump(result, fh, indent=2)
 
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) < 3:
-        print("Usage: extract_quantum_metrics.py <input.csv> <output.json>")
-        sys.exit(1)
-    main(sys.argv[1], sys.argv[2])
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Extract Q factors from resonance data")
+    parser.add_argument("input", help="CSV file with freq [GHz] and amplitude")
+    parser.add_argument("output", help="Output JSON path")
+    args = parser.parse_args()
+    main(args.input, args.output)
