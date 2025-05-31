@@ -12,7 +12,7 @@ except Exception:
 
 def main(out_path: str = "docs/plot/fig7_4.png") -> None:
     if Digraph is None:
-        print("Graphviz unavailable (Python binding missing)")
+        print("\u26A0\ufe0f  Graphviz unavailable (Python binding missing)")
         return
 
     dot = Digraph("error_flow")
@@ -33,7 +33,7 @@ def main(out_path: str = "docs/plot/fig7_4.png") -> None:
     try:
         dot.render(out_path, cleanup=True)
     except Exception as e:
-        print(f"Graphviz render failed: {e}")
+        print(f"\u26A0\ufe0f  Graphviz render failed: {e}")
 
 
 if __name__ == "__main__":
