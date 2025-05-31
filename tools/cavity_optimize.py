@@ -13,6 +13,9 @@ Outputs:
 Author: Codex（MetaShirou prompt経由）
 """
 
+import argparse
+from pprint import pprint
+
 import numpy as np
 from scipy.optimize import minimize
 import sympy as sp
@@ -28,7 +31,17 @@ beta = 1e-6
 
 # Symbolic expressions
 R_sym, L_sym, t_sym = sp.symbols("R L t", positive=True)
-Q_expr = (sigma * R_sym * L_sym) / (t_sym * fc * relative_eps)
+# NOTE: 本モデルは Q ∝ σRL / (t f_c ε_r) の簡易近似式であり、
+# 実際の TM010 モードでは Rs = √(ωμ0/(2σ)) や形状因子 F_geom などの要素が加わります。
+# 正式モデルは後続PRにて置き換える予定。
+
+
+def Q_model(R, L, t):
+    """Simplified cavity Q model."""
+    return (sigma * R * L) / (t * fc * relative_eps)
+
+
+Q_expr = Q_model(R_sym, L_sym, t_sym)
 V_expr = sp.pi * R_sym**2 * L_sym
 J_expr = -alpha * sp.log(Q_expr) + beta * V_expr
 
@@ -40,6 +53,8 @@ J_dL = sp.diff(J_expr, L_sym)
 func_J = sp.lambdify((R_sym, L_sym, t_sym), J_expr, "numpy")
 func_dJdR = sp.lambdify((R_sym, L_sym, t_sym), J_dR, "numpy")
 func_dJdL = sp.lambdify((R_sym, L_sym, t_sym), J_dL, "numpy")
+J_dt = sp.diff(J_expr, t_sym)
+func_dJdt = sp.lambdify((R_sym, L_sym, t_sym), J_dt, "numpy")
 
 
 def objective(params: np.ndarray) -> float:
@@ -51,16 +66,38 @@ def gradient(params: np.ndarray) -> np.ndarray:
     R, L, t = params
     gR = func_dJdR(R, L, t)
     gL = func_dJdL(R, L, t)
-    # Derivative w.r.t t is simple from J_expr
-    gT = float(sp.diff(J_expr, t_sym).subs({R_sym: R, L_sym: L, t_sym: t}))
+    gT = func_dJdt(R, L, t)
     return np.array([gR, gL, gT], dtype=float)
 
 
 if __name__ == "__main__":
-    x0 = np.array([0.02, 0.04, 0.001])
-    res = minimize(objective, x0, jac=gradient, method="BFGS")
+    parser = argparse.ArgumentParser(description="Optimize cavity dimensions")
+    parser.add_argument("--init_R", type=float, default=0.02)
+    parser.add_argument("--init_L", type=float, default=0.04)
+    parser.add_argument("--init_t", type=float, default=0.001)
+    parser.add_argument("--min_R", type=float, default=0.005)
+    parser.add_argument("--max_R", type=float, default=0.05)
+    parser.add_argument("--min_L", type=float, default=0.01)
+    parser.add_argument("--max_L", type=float, default=0.1)
+    parser.add_argument("--min_t", type=float, default=0.0005)
+    parser.add_argument("--max_t", type=float, default=0.005)
+    parser.add_argument("--verbose", action="store_true", help="Show full result")
+    args = parser.parse_args()
+
+    x0 = np.array([args.init_R, args.init_L, args.init_t])
+    bounds = [
+        (args.min_R, args.max_R),
+        (args.min_L, args.max_L),
+        (args.min_t, args.max_t),
+    ]
+
+    res = minimize(objective, x0, jac=gradient, bounds=bounds, method="L-BFGS-B")
     R_opt, L_opt, t_opt = res.x
     print("Optimal R (m):", R_opt)
     print("Optimal L (m):", L_opt)
     print("Optimal t (m):", t_opt)
     print("Minimum J:", res.fun)
+    print("Converged:", res.success)
+    print("Message:", res.message)
+    if args.verbose:
+        pprint(vars(res))
