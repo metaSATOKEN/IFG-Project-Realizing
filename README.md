@@ -229,3 +229,42 @@ Generated files:
 ## 📄 Reports
 
 - [Executive Summary v1.0 (2025-05-31)](docs/reports/IFG_Executive_Summary_FINAL_v1.0_2025-05-31.md)
+
+diff --git a/README.md b/README.md
+index 2d72b449e4d7bd5c6359ddef263d31f8b9c373a3..e4306510d84cc3c90b58dde542f21a67464dfc87 100644
+--- a/README.md
++++ b/README.md
+@@ -207,25 +207,33 @@ Each image includes:
+ 
+ ⚠️ Requires the Pillow library (install with `pip install pillow`)
+ 
+ 
+ ## Semantic Coupling Visualization
+ 
+ These utility scripts work with `result/semantic_coupling_map.json` to inspect how logical states relate semantically.
+ 
+ ```bash
+ python src/gen_semantic_weights.py
+ python src/plot_semantic_coupling_graph.py
+ python src/gen_semantic_tensor.py
+ python src/simulate_semantic_spread.py
+ ```
+ 
+ Generated files:
+ - `docs/plot/semantic_coupling_graph.png`
+ - `result/semantic_tensor.csv`
+ - `result/semantic_tensor.json`
+ - `result/semantic_spread_steps.json`
+ - `docs/plot/semantic_spread_step5.png`
+ 
+ ## 📄 Reports
+ 
+ - [Executive Summary v1.0 (2025-05-31)](docs/reports/IFG_Executive_Summary_FINAL_v1.0_2025-05-31.md)
++
++## 新規追加ツール
++
++- `tools/dimension_check.py`：第3章 §3.1–§3.2 の寸法解析を行う Python スクリプト
++- `docs/table/dimension_analysis.md`：パラメータの次元・代表値をまとめた表（旧 .xlsx を Markdown 形式に移行）
++- `docs/table/Vq_frequency_list.md`：ポテンシャル $V(q)$ の各軸周波数リスト
++- `docs/table/boost_validation_plan.md`：ブースト検証計画をまとめた Markdown テーブル
++- `archive/legacy_paths/path_table_from_ψ0.json`：旧形式の論理パステーブル
