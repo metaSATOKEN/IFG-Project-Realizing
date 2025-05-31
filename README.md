@@ -225,3 +225,7 @@ Generated files:
 - `result/semantic_tensor.json`
 - `result/semantic_spread_steps.json`
 - `docs/plot/semantic_spread_step5.png`
+
+## 📄 Reports
+
+- [Executive Summary v1.0 (2025-05-31)](docs/reports/IFG_Executive_Summary_FINAL_v1.0_2025-05-31.md)
