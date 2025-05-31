@@ -6,7 +6,7 @@ CLI Usage:
 """
 import json
 import os
-from typing import List, Iterable
+from typing import List, Iterable, Optional, Tuple
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -42,33 +42,44 @@ def save_plot(values: List[float], labels: List[str], path: str) -> None:
 
 
 def make_dir(path: str) -> None:
-    if not path:
-        return
-    os.makedirs(os.path.normpath(path), exist_ok=True)
+    dirpath = os.path.normpath(path)
+    if dirpath and dirpath != ".":
+        os.makedirs(dirpath, exist_ok=True)
 
 
-def load_config(path: str) -> List[Layer]:
+def load_config(path: str) -> Tuple[List[Layer], List[str]]:
     with open(path, "r") as fh:
         items = json.load(fh)
     layers = [
-        Layer(area=item["area"], emissivity=item["emissivity"], thot=item["thot"], tcold=item["tcold"])
+        Layer(
+            area=item["area"],
+            emissivity=item["emissivity"],
+            thot=item["thot"],
+            tcold=item["tcold"],
+        )
         for item in items
     ]
-    return layers, [item.get("label", f"{item['thot']}→{item['tcold']}K") for item in items]
+    labels = [item.get("label", f"{item['thot']}→{item['tcold']}K") for item in items]
+    return layers, labels
 
 
-def main(config_path: str, out_json: str, plot_path: str | None = None) -> None:
+def main(
+    config_path: str,
+    out_json: str,
+    plot_path: Optional[str] = None,
+    verbose: bool = False,
+) -> None:
     layers, labels = load_config(config_path)
     loads = simulate(layers)
-    for i, load in enumerate(loads):
-        print(f"Layer {i} heatload: {load:.3f} W")
-    total = float(np.sum(loads))
-    print("Total heat load:", total)
+    if verbose:
+        for i, load in enumerate(loads):
+            print(f"Layer {i} heatload: {load:.3f} W")
+        print("Total heat load:", float(np.sum(loads)))
     make_dir(os.path.dirname(out_json))
     if plot_path:
         save_plot(loads.tolist(), labels, plot_path)
     with open(out_json, "w") as fh:
-        json.dump({"layers": loads.tolist(), "total": total}, fh, indent=2)
+        json.dump({"layers": loads.tolist(), "total": float(np.sum(loads))}, fh, indent=2)
 
 
 if __name__ == "__main__":
@@ -78,6 +89,7 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="result/heatload_layers.json", help="JSON layer configuration")
     parser.add_argument("--out-json", default="result/heatload.json", help="Output JSON path")
     parser.add_argument("--plot-path", help="Path to save bar plot")
+    parser.add_argument("--verbose", action="store_true", help="Print layer heat loads")
     args = parser.parse_args()
-    os.makedirs(os.path.dirname(args.out_json), exist_ok=True)
-    main(args.config, args.out_json, args.plot_path)
+    make_dir(os.path.dirname(args.out_json))
+    main(args.config, args.out_json, args.plot_path, args.verbose)

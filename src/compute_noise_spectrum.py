@@ -41,7 +41,7 @@ def fit_noise(freq: np.ndarray, psd: np.ndarray) -> Tuple[float, float, float]:
         freq,
         psd,
         p0=[1e-12, 1e-12],
-        bounds=(0, np.inf),
+        bounds=([0, 0], [np.inf, np.inf]),
         maxfev=10000,
     )
     residual = np.mean((psd - noise_model(freq, *popt)) ** 2)

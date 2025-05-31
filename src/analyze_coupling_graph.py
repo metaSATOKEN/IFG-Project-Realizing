@@ -2,7 +2,7 @@
 
 import json
 from collections import defaultdict, deque
-from typing import Dict, List, Set
+from typing import Dict, List, Set, Optional
 
 SUBSCRIPT_MAP = str.maketrans("₀₁₂₃₄₅₆₇₈₉", "0123456789")
 
@@ -45,7 +45,7 @@ def build_adj(nodes: List[str], edges: List[tuple[str, str]]) -> Dict[str, Set[s
 
 def bfs_paths(adj: Dict[str, Set[str]], start: str) -> Dict[str, List[str]]:
     queue = deque([start])
-    prev: Dict[str, str | None] = {start: None}
+    prev: Dict[str, Optional[str]] = {start: None}
     while queue:
         u = queue.popleft()
         for v in adj[u]:

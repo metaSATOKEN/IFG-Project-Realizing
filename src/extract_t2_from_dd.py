@@ -6,7 +6,7 @@ CLI Usage:
 """
 
 import json
-from typing import Tuple
+from typing import Tuple, Optional
 
 import numpy as np
 from scipy.optimize import curve_fit
@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import warnings
 
 
-def load_csv(path: str) -> Tuple[np.ndarray, np.ndarray]:
+def load_csv(path: str, allow_negative: bool = False) -> Tuple[np.ndarray, np.ndarray]:
     """Load DD data. Columns: N and coherence signal."""
     data = np.genfromtxt(path, delimiter=",", names=True)
     if data.size == 0 or not data.dtype.names or len(data.dtype.names) < 2:
@@ -25,10 +25,12 @@ def load_csv(path: str) -> Tuple[np.ndarray, np.ndarray]:
     n = n[mask]
     signal = signal[mask]
     if np.any(signal < 0):
-        warnings.warn("Negative signal values encountered; removing")
-        mask = signal >= 0
-        n = n[mask]
-        signal = signal[mask]
+        if allow_negative:
+            warnings.warn("Negative signal values encountered; keeping values")
+        else:
+            mask = signal >= 0
+            n = n[mask]
+            signal = signal[mask]
     return n, signal
 
 
@@ -42,7 +44,7 @@ def fit_decay(n: np.ndarray, signal: np.ndarray) -> Tuple[float, float]:
         n,
         signal,
         p0=[0.01, max(signal)],
-        bounds=(0, np.inf),
+        bounds=([0, 0], [np.inf, np.inf]),
         maxfev=10000,
     )
     return popt[0], popt[1]
@@ -61,8 +63,8 @@ def save_plot(n: np.ndarray, signal: np.ndarray, gamma: float, path: str) -> Non
     plt.close()
 
 
-def main(path: str, out_json: str, plot_path: str | None = None, save_plot_flag: bool = False) -> None:
-    n, sig = load_csv(path)
+def main(path: str, out_json: str, plot_path: Optional[str] = None, save_plot_flag: bool = False, allow_negative: bool = False) -> None:
+    n, sig = load_csv(path, allow_negative=allow_negative)
     gamma, amp = fit_decay(n, sig)
     t2 = 1.0 / gamma if gamma != 0 else float("inf")
     result = {"Gamma_dec": gamma, "T2": t2, "unit": "pulse"}
@@ -80,5 +82,6 @@ if __name__ == "__main__":
     parser.add_argument("output", help="Output JSON path")
     parser.add_argument("--plot-path", help="Destination for plot PNG")
     parser.add_argument("--save-plot", action="store_true", help="Generate decay plot")
+    parser.add_argument("--allow-negative", action="store_true", help="Keep negative signal values")
     args = parser.parse_args()
-    main(args.input, args.output, args.plot_path, args.save_plot)
+    main(args.input, args.output, args.plot_path, args.save_plot, args.allow_negative)

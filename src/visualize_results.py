@@ -14,9 +14,9 @@ def compute_lorentz_curve(fc: float, ql: float, f: np.ndarray) -> np.ndarray:
 
 
 def make_dir(path: str) -> None:
-    if not path:
-        return
-    os.makedirs(os.path.normpath(path), exist_ok=True)
+    dirpath = os.path.normpath(path)
+    if dirpath and dirpath != ".":
+        os.makedirs(dirpath, exist_ok=True)
 
 
 def plot_resonance(metrics_json: str, out_dir: str) -> None:
@@ -31,7 +31,7 @@ def plot_resonance(metrics_json: str, out_dir: str) -> None:
     plt.figure()
     plt.plot(f, lor, label="Lorentzian")
     plt.xlabel("Frequency [GHz]")
-    plt.ylabel("Coherence (arb.)")
+    plt.ylabel("Amplitude (arb.)")
     plt.title("Resonance Spectrum")
     plt.legend()
     make_dir(out_dir)
