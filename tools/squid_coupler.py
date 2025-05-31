@@ -13,6 +13,9 @@ Outputs:
 Author: Codex（MetaShirou prompt経由）
 """
 
+import argparse
+import os
+
 import numpy as np
 from scipy.optimize import minimize
 
@@ -48,6 +51,7 @@ def save_plot(d_vals: np.ndarray, J_vals: np.ndarray, path: str = "docs/plot/squ
     """Save objective versus spacing plot."""
     try:
         import matplotlib.pyplot as plt
+        os.makedirs(os.path.dirname(path), exist_ok=True)
 
         plt.figure()
         plt.plot(d_vals, J_vals, marker="o")
@@ -68,6 +72,7 @@ if __name__ == "__main__":
     print("Optimal d (m):", d_opt)
     print("Minimum J:", res.fun)
 
-    d_vals = np.linspace(0.001, 0.005, 30)
-    J_vals = [objective(np.array([R1_opt, R2_opt, d])) for d in d_vals]
-    save_plot(d_vals, np.array(J_vals))
+    # d_vals = np.linspace(0.001, 0.005, 30)
+    # J_vals = [objective(np.array([R1_opt, R2_opt, d])) for d in d_vals]
+    # save_plot(d_vals, np.array(J_vals))
+    # ※ 後から人手でプロット生成したい場合は、上記3行のコメントを外して実行してください

@@ -14,6 +14,7 @@ Author: Codex（MetaShirou prompt経由）
 """
 
 import argparse
+import os
 import numpy as np
 from scipy.integrate import quad
 
@@ -45,6 +46,7 @@ def save_plot(N_vals: np.ndarray, T2_vals: np.ndarray, path: str = "docs/plot/dd
     """Save T2 versus pulse count plot."""
     try:
         import matplotlib.pyplot as plt
+        os.makedirs(os.path.dirname(path), exist_ok=True)
 
         plt.figure()
         plt.plot(N_vals, T2_vals, marker="o")
@@ -78,10 +80,7 @@ if __name__ == "__main__":
     print("Γ_dec:", gamma_dec)
     print("1/T2:", inv_T2)
 
-    N_vals = np.arange(1, N + 1)
-    T2_vals = []
-    for n in N_vals:
-        N = n
-        gamma_val, _ = quad(integrand, omega_min, omega_max, limit=500)
-        T2_vals.append(1.0 / gamma_val if gamma_val != 0 else np.inf)
-    save_plot(N_vals, np.array(T2_vals))
+    # N_vals = np.arange(1, N + 1)
+    # T2_vals = [1.0 / quad(integrand, omega_min, omega_max, limit=500)[0] for n in N_vals]
+    # save_plot(N_vals, np.array(T2_vals))
+    # ※ PNGは後から人手で生成予定。上記3行を外して実行すれば画像が生成されます
