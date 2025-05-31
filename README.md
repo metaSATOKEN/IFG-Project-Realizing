@@ -318,13 +318,33 @@ python src/generate_error_analysis_flow.py --out docs/plot/fig7_4.png
 python src/fit_theory_experiment_mapping.py result/theory_params_init.json result/metrics.json result/t2.json result/noise_fit.json result/temperature_drift.csv result/heatload.json result/theory_params_validated.json
 ```
 
-# 開発者向けセットアップ：
+## 🗂 必要な実験データ（Chapter 7 用）
 
-💡 安全な依存管理のため、以下のように仮想環境の利用を推奨します：
+以下のファイルが必要です：
+
+- `data/resonance_experiment.csv`：共鳴スペクトルの生データ（freq, I, Q）
+- `result/metrics.json`：extract_quantum_metrics.py により生成
+- `result/noise_fit.json`：compute_noise_spectrum.py により生成
+- `result/theory_noise.json`：simulate_noise_spectrum.py により生成
+- `data/dd_experiment.csv`：DD 実験による N, coherence
+- `result/t2.json`：extract_t2_from_dd.py により生成
+- `result/temperature_drift.csv`：温度 vs 時刻のドリフトログ
+- `result/heatload.json`：sim_cooling_heatload.py により生成
+
+## 🔧 開発者向けセットアップ
+
+💡 推奨：Python 3.8 以上
 
 ```bash
+# 仮想環境の作成（Unix/macOS）
 python -m venv .venv
 source .venv/bin/activate
+
+# 仮想環境の作成（Windows）
+python -m venv .venv
+\.venv\Scripts\activate
+
+# 必要な依存のインストール
 make install
 make dev-install
 
@@ -349,7 +369,11 @@ make figs7
 ```
 
 ⚠️ 注意：
-本プロジェクトでは `src/` ディレクトリをパッケージ化していますが、
-環境によっては `src` という名前の他パッケージと競合する可能性があります。
-競合が発生する場合はプロジェクトルートで `pip install -e .` を実行し、
-`PYTHONPATH=.` を通して動作確認を行ってください。
+`src/` および `tools/` は Python パッケージとして認識されますが、
+環境によっては `src` や `tools` という名前の別パッケージと競合する可能性があります。
+
+- 競合エラーが発生する場合：
+  - `pip install -e .` を先に実行してください。
+  - もしくは `PYTHONPATH=.` を通して実行してください。
+
+将来的に避けたい場合は、独自名前空間（例：`ifg/`）への移行を検討してください。

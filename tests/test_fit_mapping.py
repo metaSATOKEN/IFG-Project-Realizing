@@ -34,6 +34,7 @@ def test_fit_params(tmp_path: Path) -> None:
 
     assert loaded["fc_GHz"] != 0
     assert loaded["Q_loaded"] > 1
+    assert "Gamma_dec" in loaded and isinstance(loaded["Gamma_dec"], (int, float))
     assert loaded["Gamma_dec"] == t2["Gamma_dec"]
     assert "noise_A" in loaded and isinstance(loaded["noise_A"], float)
     assert "noise_B" in loaded and isinstance(loaded["noise_B"], float)
