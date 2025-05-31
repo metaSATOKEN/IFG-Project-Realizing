@@ -7,12 +7,12 @@ from pathlib import Path
 try:
     from graphviz import Digraph
 except Exception:
+    print("\u26A0\ufe0f  Graphviz unavailable (Python binding missing)")
     Digraph = None
 
 
 def main(out_path: str = "docs/plot/fig7_4.png") -> None:
     if Digraph is None:
-        print("\u26A0\ufe0f  Graphviz unavailable (Python binding missing)")
         return
 
     dot = Digraph("error_flow")
@@ -32,6 +32,7 @@ def main(out_path: str = "docs/plot/fig7_4.png") -> None:
     dot.format = "png"
     try:
         dot.render(out_path, cleanup=True)
+        print(f"\u2705 Graph generated at {out_path}")
     except Exception as e:
         print(f"\u26A0\ufe0f  Graphviz render failed: {e}")
 

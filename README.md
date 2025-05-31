@@ -331,7 +331,7 @@ python src/fit_theory_experiment_mapping.py result/theory_params_init.json resul
 - `result/temperature_drift.csv`：温度 vs 時刻のドリフトログ
 - `result/heatload.json`：sim_cooling_heatload.py により生成
 
-## 🔧 開発者向けセットアップ
+## 🔧 開発者向けセットアップ（venv 利用推奨）
 
 💡 推奨：Python 3.8 以上
 
@@ -377,3 +377,9 @@ make figs7
   - もしくは `PYTHONPATH=.` を通して実行してください。
 
 将来的に避けたい場合は、独自名前空間（例：`ifg/`）への移行を検討してください。
+
+📦 本プロジェクトは wheels/ に事前に配置した .whl ファイルを優先して使用します。
+`pip install -r requirements.txt` が失敗する場合、以下のいずれかで対応してください：
+
+- wheels/ に依存パッケージの .whl をダウンロードして配置する
+- Docker イメージ内で事前にインストールする
