@@ -44,6 +44,21 @@ def objective(x: np.ndarray) -> float:
     return J
 
 
+def save_plot(d_vals: np.ndarray, J_vals: np.ndarray, path: str = "docs/plot/squid_J_vs_d.png") -> None:
+    """Save objective versus spacing plot."""
+    try:
+        import matplotlib.pyplot as plt
+
+        plt.figure()
+        plt.plot(d_vals, J_vals, marker="o")
+        plt.xlabel("d (m)")
+        plt.ylabel("J")
+        plt.tight_layout()
+        plt.savefig(path)
+    except Exception as exc:
+        print("Plot save failed:", exc)
+
+
 if __name__ == "__main__":
     x0 = np.array([0.005, 0.005, 0.002])
     res = minimize(objective, x0, method="BFGS")
@@ -52,3 +67,7 @@ if __name__ == "__main__":
     print("Optimal R2 (m):", R2_opt)
     print("Optimal d (m):", d_opt)
     print("Minimum J:", res.fun)
+
+    d_vals = np.linspace(0.001, 0.005, 30)
+    J_vals = [objective(np.array([R1_opt, R2_opt, d])) for d in d_vals]
+    save_plot(d_vals, np.array(J_vals))

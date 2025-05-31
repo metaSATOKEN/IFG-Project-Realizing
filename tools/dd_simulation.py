@@ -41,6 +41,21 @@ def integrand(omega: float) -> float:
     return sn(omega) * f_udd(omega) / (omega**2)
 
 
+def save_plot(N_vals: np.ndarray, T2_vals: np.ndarray, path: str = "docs/plot/dd_T2_vs_N.png") -> None:
+    """Save T2 versus pulse count plot."""
+    try:
+        import matplotlib.pyplot as plt
+
+        plt.figure()
+        plt.plot(N_vals, T2_vals, marker="o")
+        plt.xlabel("N")
+        plt.ylabel("T2 [s]")
+        plt.tight_layout()
+        plt.savefig(path)
+    except Exception as exc:
+        print("Plot save failed:", exc)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Evaluate decoherence suppression of UDD sequence"
@@ -62,3 +77,11 @@ if __name__ == "__main__":
     inv_T2 = 1.0 / gamma_dec if gamma_dec != 0 else np.inf
     print("Γ_dec:", gamma_dec)
     print("1/T2:", inv_T2)
+
+    N_vals = np.arange(1, N + 1)
+    T2_vals = []
+    for n in N_vals:
+        N = n
+        gamma_val, _ = quad(integrand, omega_min, omega_max, limit=500)
+        T2_vals.append(1.0 / gamma_val if gamma_val != 0 else np.inf)
+    save_plot(N_vals, np.array(T2_vals))
