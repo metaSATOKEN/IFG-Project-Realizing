@@ -5,14 +5,11 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
-import sys
-
-sys.path.append(str(Path(__file__).resolve().parent))
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-from extract_quantum_metrics import load_csv, lorentzian
+from src.extract_quantum_metrics import load_csv, lorentzian
 
 
 def main(csv_path: str, metrics_json: str, out_path: str = "docs/plot/fig7_1.png") -> None:

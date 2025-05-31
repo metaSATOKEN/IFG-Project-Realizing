@@ -317,3 +317,22 @@ python src/generate_error_analysis_flow.py --out docs/plot/fig7_4.png
 # Parameter mapping
 python src/fit_theory_experiment_mapping.py result/theory_params_init.json result/metrics.json result/t2.json result/noise_fit.json result/temperature_drift.csv result/heatload.json result/theory_params_validated.json
 ```
+
+## 開発者向けセットアップ：
+
+```bash
+# 依存のインストール（本番環境用）
+make install
+
+# 開発・テスト環境の構築
+make dev-install
+
+# テストの実行
+make test
+
+# Chapter 7 図の再生成
+make figs7
+⚠️ Graphviz バインディング（python-graphviz）は requirements.txt に含まれていますが、
+図を出力するには別途 Graphviz 本体（例：apt install graphviz）が必要です。
+未インストール環境では generate_error_analysis_flow.py は自動的にスキップされます。
+```
