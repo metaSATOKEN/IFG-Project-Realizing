@@ -1,0 +1,5 @@
+[
+  {"area": 0.1, "emissivity": 0.05, "thot": 300, "tcold": 50, "label": "300→50K"},
+  {"area": 0.1, "emissivity": 0.05, "thot": 50, "tcold": 4, "label": "50→4K"},
+  {"area": 0.1, "emissivity": 0.05, "thot": 4, "tcold": 0.1, "label": "4→0.1K"}
+]

@@ -281,3 +281,17 @@ index 2d72b449e4d7bd5c6359ddef263d31f8b9c373a3..e4306510d84cc3c90b58dde542f21a67
 
 docs/plot/ 以下に各スクリプト出力結果（matplotlib 画像など）を格納し、IFG_Report_v1.1.md（または第4・5章）に埋め込みます。
 📝 NOTE: レポート本文に含まれる図は、`tools/*.py` を実行して生成されます。CI/CD 環境またはローカルでスクリプトを走らせ、`docs/plot/` 以下に PNG を作成してからコミットしてください。
+
+## Measurement Analysis Utilities
+
+Install dependencies with `pip install -r requirements.txt`.
+
+Example usage:
+
+```bash
+python src/compute_noise_spectrum.py noise.csv result/noise_fit.json
+python src/extract_quantum_metrics.py resonance.csv result/metrics.json
+python src/extract_t2_from_dd.py dd.csv result/t2.json --save-plot --plot-path docs/plot/fig6_3.png
+python src/sim_cooling_heatload.py --config result/heatload_layers.json --out-json result/heatload.json --plot-path docs/plot/fig6_4.png
+python src/visualize_results.py result/metrics.json result/noise_fit.json result/t2.json --out-dir docs/plot
+```
