@@ -229,6 +229,7 @@ Generated files:
 ## 📄 Reports
 
 - [Executive Summary v1.0 (2025-05-31)](docs/reports/IFG_Executive_Summary_FINAL_v1.0_2025-05-31.md)
+- [IFG Report v1.1](docs/report/IFG_Report_v1.1.md)
 
 diff --git a/README.md b/README.md
 index 2d72b449e4d7bd5c6359ddef263d31f8b9c373a3..e4306510d84cc3c90b58dde542f21a67464dfc87 100644

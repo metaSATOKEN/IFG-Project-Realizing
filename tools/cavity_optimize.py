@@ -70,6 +70,21 @@ def gradient(params: np.ndarray) -> np.ndarray:
     return np.array([gR, gL, gT], dtype=float)
 
 
+def save_plot(R_vals: np.ndarray, J_vals: np.ndarray, path: str = "docs/plot/cavity_J_vs_R.png") -> None:
+    """Save J versus R plot."""
+    try:
+        import matplotlib.pyplot as plt
+
+        plt.figure()
+        plt.plot(R_vals, J_vals, marker="o")
+        plt.xlabel("R (m)")
+        plt.ylabel("J")
+        plt.tight_layout()
+        plt.savefig(path)
+    except Exception as exc:
+        print("Plot save failed:", exc)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Optimize cavity dimensions")
     parser.add_argument("--init_R", type=float, default=0.02)
@@ -101,3 +116,7 @@ if __name__ == "__main__":
     print("Message:", res.message)
     if args.verbose:
         pprint(vars(res))
+
+    R_vals = np.linspace(args.min_R, args.max_R, 50)
+    J_vals = [objective([r, L_opt, t_opt]) for r in R_vals]
+    save_plot(R_vals, np.array(J_vals))
