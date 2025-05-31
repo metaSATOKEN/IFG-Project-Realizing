@@ -3,10 +3,18 @@
 from __future__ import annotations
 
 from pathlib import Path
-from graphviz import Digraph
+
+try:
+    from graphviz import Digraph
+except Exception:
+    Digraph = None
 
 
 def main(out_path: str = "docs/plot/fig7_4.png") -> None:
+    if Digraph is None:
+        print("Graphviz unavailable")
+        return
+
     dot = Digraph("error_flow")
     dot.attr(rankdir="TB")
     dot.node("start", "Start")

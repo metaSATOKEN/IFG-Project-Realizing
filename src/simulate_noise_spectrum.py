@@ -5,6 +5,9 @@ from __future__ import annotations
 import json
 import numpy as np
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent))
 
 
 def noise_theory(w: np.ndarray, A: float, B: float, C: float = 0.0) -> np.ndarray:

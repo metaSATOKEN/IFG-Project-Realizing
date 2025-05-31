@@ -10,6 +10,10 @@ CLI Usage:
 import json
 import warnings
 from typing import Tuple
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parent))
 
 import numpy as np
 from scipy.optimize import curve_fit

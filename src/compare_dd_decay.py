@@ -5,6 +5,11 @@ from __future__ import annotations
 import csv
 import json
 import os
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent))
+
 import numpy as np
 import matplotlib.pyplot as plt
 

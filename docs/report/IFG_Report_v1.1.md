@@ -130,7 +130,7 @@ $ python tools/dd_simulation.py
 実験で抽出した共鳴周波数や $Q$ 因子，ノイズ係数 $A,B$，デコヒーレンス率 $\Gamma_{\text{dec}}$ を理論パラメータへマッピングした。表7.1 に主要パラメータの対応関係を示す。
 
 | 理論パラメータ | 実験値由来 |
-|--------------|-----------|
+| --- | --- |
 | $\omega_0$ (fc\_GHz) | metrics.json |
 | $Q_{\text{loaded}}$ | metrics.json |
 | $A,B$ | noise\_fit.json |
