@@ -1,7 +1,14 @@
 from pathlib import Path
 import json
+from conftest import HAS_NUMPY
+import pytest
 
-from src.fit_theory_experiment_mapping import fit_params
+pytestmark = pytest.mark.skipif(
+    not HAS_NUMPY, reason="NumPy が未インストールのためスキップ"
+)
+
+if HAS_NUMPY:
+    from src.fit_theory_experiment_mapping import fit_params
 
 
 def test_fit_params(tmp_path: Path) -> None:

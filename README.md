@@ -318,18 +318,18 @@ python src/generate_error_analysis_flow.py --out docs/plot/fig7_4.png
 python src/fit_theory_experiment_mapping.py result/theory_params_init.json result/metrics.json result/t2.json result/noise_fit.json result/temperature_drift.csv result/heatload.json result/theory_params_validated.json
 ```
 
-## 🗂 必要な実験データ（Chapter 7 用）
+## Chapter 7 に必要なファイル一覧
 
-以下のファイルが必要です：
-
-- `data/resonance_experiment.csv`：共鳴スペクトルの生データ（freq, I, Q）
-- `result/metrics.json`：extract_quantum_metrics.py により生成
-- `result/noise_fit.json`：compute_noise_spectrum.py により生成
-- `result/theory_noise.json`：simulate_noise_spectrum.py により生成
-- `data/dd_experiment.csv`：DD 実験による N, coherence
-- `result/t2.json`：extract_t2_from_dd.py により生成
-- `result/temperature_drift.csv`：温度 vs 時刻のドリフトログ
-- `result/heatload.json`：sim_cooling_heatload.py により生成
+| ファイル名                      | 内容                               | 生成スクリプト例 |
+|-------------------------------|------------------------------------|------------------|
+| data/resonance_experiment.csv | 周波数掃引の生データ (freq, I, Q)   | 測定機器出力     |
+| result/metrics.json           | 共鳴スペクトルの解析結果           | extract_quantum_metrics.py |
+| result/noise_fit.json         | 実測ノイズのフィッティング         | compute_noise_spectrum.py |
+| result/theory_noise.json      | 理論ノイズ曲線                     | simulate_noise_spectrum.py |
+| data/dd_experiment.csv        | DD 実験 (N, coherence)             | 実験ログ         |
+| result/t2.json                | T2 抽出結果                        | extract_t2_from_dd.py |
+| result/temperature_drift.csv  | 温度ドリフトログ                   | ロガー出力       |
+| result/heatload.json          | 熱負荷推定                         | sim_cooling_heatload.py |
 
 ## 🔧 開発者向けセットアップ（venv 利用推奨）
 
@@ -383,3 +383,12 @@ make figs7
 
 - wheels/ に依存パッケージの .whl をダウンロードして配置する
 - Docker イメージ内で事前にインストールする
+
+## 📦 オフライン環境での依存インストール
+
+プロジェクトには `wheels/` フォルダを用意しておくことで、ネットワークなしでも依存を解決できます：
+
+```bash
+# wheels に .whl を格納しておく
+make install  # 自動的に --no-index 優先で探します
+```

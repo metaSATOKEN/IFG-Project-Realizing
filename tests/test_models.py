@@ -1,7 +1,15 @@
-import numpy as np
-from src.compute_noise_spectrum import noise_model
-from src.extract_quantum_metrics import lorentzian
-from src.visualize_results import compute_lorentz_curve
+from conftest import HAS_NUMPY
+import pytest
+
+pytestmark = pytest.mark.skipif(
+    not HAS_NUMPY, reason="NumPy が未インストールのためスキップ"
+)
+
+if HAS_NUMPY:
+    import numpy as np
+    from src.compute_noise_spectrum import noise_model
+    from src.extract_quantum_metrics import lorentzian
+    from src.visualize_results import compute_lorentz_curve
 
 
 def test_noise_model():
