@@ -54,7 +54,7 @@ def fit_lorentzian(freqs: np.ndarray, amps: np.ndarray) -> Tuple[float, float, f
         freqs,
         amps,
         p0=[fc_guess, q_guess, depth_guess, base_guess],
-        bounds=(0, np.inf),
+        bounds=([0, 0, 0, 0], [np.inf, np.inf, np.inf, np.inf]),
         maxfev=10000,
     )
     return tuple(popt)

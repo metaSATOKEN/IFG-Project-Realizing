@@ -284,14 +284,21 @@ docs/plot/ 以下に各スクリプト出力結果（matplotlib 画像など）�
 
 ## Measurement Analysis Utilities
 
-Install dependencies with `pip install -r requirements.txt`.
+Install dependencies with `pip install -r requirements.txt`\*.
+
+\*`qutip` is omitted from the requirements for now but may be used in future scripts.
 
 Example usage:
 
 ```bash
-python src/compute_noise_spectrum.py noise.csv result/noise_fit.json
+python src/compute_noise_spectrum.py noise.csv result/noise_fit.json --res-threshold 0.1
+# '--res-threshold' controls the residual/variance warning level
 python src/extract_quantum_metrics.py resonance.csv result/metrics.json
 python src/extract_t2_from_dd.py dd.csv result/t2.json --save-plot --plot-path docs/plot/fig6_3.png
 python src/sim_cooling_heatload.py --config result/heatload_layers.json --out-json result/heatload.json --plot-path docs/plot/fig6_4.png
 python src/visualize_results.py result/metrics.json result/noise_fit.json result/t2.json --out-dir docs/plot
 ```
+
+`sim_cooling_heatload.py` works without arguments using the same defaults as above, but the example shows them explicitly for clarity.
+
+`extract_quantum_metrics.py` accepts CSV files with either a `freq` column (GHz) or a `timestamp` column converted to frequency. Amplitude can come from `I`/`Q` or an `abs` column.
