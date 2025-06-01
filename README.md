@@ -392,3 +392,15 @@ make figs7
 # wheels に .whl を格納しておく
 make install  # 自動的に --no-index 優先で探します
 ```
+
+## Simulation Results
+
+This repository includes three simulation models:
+
+- **Model 9.3**: Asymmetric resonance strength λₘₑ(t), visualized over 10 steps
+- **Model 10.3**: 10-node dynamic λ_ij(t) evolution based on logistic + competition rule
+- **Model 10.6**: 30-node extended Λ(t) network simulation with cluster-level stats
+
+Key result: see `results/model_10_6_stats.csv` for network-wide λ statistics.
+
+All simulations are implemented in pure Python without external dependencies (NumPy-free).
