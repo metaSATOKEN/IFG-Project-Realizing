@@ -1,0 +1,10 @@
+t=0 lambda_m->e=0.000480 lambda_e->m=-0.000480
+t=1 lambda_m->e=0.841951 lambda_e->m=0.840991
+t=2 lambda_m->e=0.909777 lambda_e->m=0.908817
+t=3 lambda_m->e=0.141600 lambda_e->m=0.140640
+t=4 lambda_m->e=-0.756322 lambda_e->m=-0.757282
+t=5 lambda_m->e=-0.958444 lambda_e->m=-0.959404
+t=6 lambda_m->e=-0.278935 lambda_e->m=-0.279895
+t=7 lambda_m->e=0.657467 lambda_e->m=0.656507
+t=8 lambda_m->e=0.989838 lambda_e->m=0.988878
+t=9 lambda_m->e=0.412598 lambda_e->m=0.411638
