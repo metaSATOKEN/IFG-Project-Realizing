@@ -1,0 +1,64 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='240'>
+  <style>text { font-family: sans-serif; font-size: 12px; }</style>
+  <rect x='60' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='85.0' y='55' text-anchor='middle'>Stage 0</text>
+  <text x='85.0' y='70' text-anchor='middle'>λ_0(t)</text>
+  <rect x='60' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='85.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='85.0' y='120' text-anchor='middle'>ξ_0</text>
+  <rect x='130' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='155.0' y='55' text-anchor='middle'>Stage 1</text>
+  <text x='155.0' y='70' text-anchor='middle'>λ_1(t)</text>
+  <rect x='130' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='155.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='155.0' y='120' text-anchor='middle'>ξ_1</text>
+  <rect x='200' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='225.0' y='55' text-anchor='middle'>Stage 2</text>
+  <text x='225.0' y='70' text-anchor='middle'>λ_2(t)</text>
+  <rect x='200' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='225.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='225.0' y='120' text-anchor='middle'>ξ_2</text>
+  <rect x='270' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='295.0' y='55' text-anchor='middle'>Stage 3</text>
+  <text x='295.0' y='70' text-anchor='middle'>λ_3(t)</text>
+  <rect x='270' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='295.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='295.0' y='120' text-anchor='middle'>ξ_3</text>
+  <rect x='340' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='365.0' y='55' text-anchor='middle'>Stage 4</text>
+  <text x='365.0' y='70' text-anchor='middle'>λ_4(t)</text>
+  <rect x='340' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='365.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='365.0' y='120' text-anchor='middle'>ξ_4</text>
+  <rect x='410' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='435.0' y='55' text-anchor='middle'>Stage 5</text>
+  <text x='435.0' y='70' text-anchor='middle'>λ_5(t)</text>
+  <rect x='410' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='435.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='435.0' y='120' text-anchor='middle'>ξ_5</text>
+  <rect x='480' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='505.0' y='55' text-anchor='middle'>Stage 6</text>
+  <text x='505.0' y='70' text-anchor='middle'>λ_6(t)</text>
+  <rect x='480' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='505.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='505.0' y='120' text-anchor='middle'>ξ_6</text>
+  <rect x='550' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='575.0' y='55' text-anchor='middle'>Stage 7</text>
+  <text x='575.0' y='70' text-anchor='middle'>λ_7(t)</text>
+  <rect x='550' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='575.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='575.0' y='120' text-anchor='middle'>ξ_7</text>
+  <rect x='620' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='645.0' y='55' text-anchor='middle'>Stage 8</text>
+  <text x='645.0' y='70' text-anchor='middle'>λ_8(t)</text>
+  <rect x='620' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='645.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='645.0' y='120' text-anchor='middle'>ξ_8</text>
+  <rect x='690' y='40' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='715.0' y='55' text-anchor='middle'>Stage 9</text>
+  <text x='715.0' y='70' text-anchor='middle'>λ_9(t)</text>
+  <rect x='690' y='90' width='50' height='40' fill='#eef' stroke='black' />
+  <text x='715.0' y='105' text-anchor='middle'>Verify</text>
+  <text x='715.0' y='120' text-anchor='middle'>ξ_9</text>
+  <text x='60' y='220'>ξ_n = ξ_base ⊕ SHA256(seed‖n)</text>
+</svg>
